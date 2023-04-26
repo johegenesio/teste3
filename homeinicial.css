@@ -1,0 +1,518 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('base.css');
+
+:root {
+    --cor0: #353535;
+    --cor1: #4C8647;
+    --cor2: #8A78E0;
+    --cor3: #2B7FFF;
+    --cor4: #FA4236;
+    --cor5: #F2901C;
+    --cor6: #fbfbfb;
+    --cor7: #f2eeeb;
+    --cores: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    border-radius: 8px 0px 0px 8px;
+}
+
+body {
+    background-color: var(--cor6);
+    color: var(--cor0);
+
+    font-family: var(--font);
+}
+
+section {
+    height: 80vh;
+
+    padding: 4% 4%;
+
+    width: 80%;
+    margin: 0px auto;
+}
+
+h2.title-2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4%;
+}
+
+p {
+    font-size: 16px;
+}
+
+/*header*/
+
+header {
+    display: flex; -------------
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 96px;
+
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+
+    backdrop-filter: blur(15px);
+    border-radius: 15px; -----------
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+    z-index: 1;
+}
+
+h1.logo {
+    color: var(--cor0);
+
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+nav.large {
+    width: 80%;
+
+    display: flex; ---------------
+    justify-content: flex-end;
+}
+
+nav.small {
+    display: none;
+}
+
+a.link-h {
+    font-size: 16px ;
+    margin-left: 8%;
+
+    color: var(--cor0);
+
+    text-decoration: none;
+}
+
+a.link-h:hover {
+    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*principal*/
+
+section#principal {
+    height: 95vh;
+
+    display: flex; -----------
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#principal > div.msg-p > h1 {
+    font-family: var(--font);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/*botão principal*/
+
+a.link-p {
+    border-radius: 16px; -----------
+        
+    padding: 16px 32px;
+
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 16px;
+}
+
+a.link-p:hover {
+    background: linear-gradient(90deg, #4C8647 35%, #8A78E0 45%, #2B7FFF 55%, #FA4236 65%, #F2901C 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+div.conta {
+    display: flex;
+
+    margin-top: 6%;
+}
+
+div.btn-p {
+    background-color: var(--cor7);
+    border-radius: 16px;--------------
+    margin-right: 4%;
+}
+
+/*fim do botão*/
+
+div.img-p {
+    display: flex;-----------
+    justify-content: flex-end;
+}
+
+/*venda*/
+
+section#venda {
+    background-color: var(--cor7);
+
+    border-radius: 15px; -----------
+
+    display: flex; ---------
+    flex-direction: column;
+}
+
+div.img-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0px;
+}
+
+div.info {
+    display: flex; --------------
+    flex-direction: column;
+    gap: 4%;
+
+    width: 50%;
+}
+
+p.cub-venda {
+    padding: 4%;
+    background-color: var(--cor6);
+    border-radius: 15px; --------
+}
+
+.carousel {
+    width: 40%;
+}
+
+/*ganhe*/
+
+section#ganhe {
+    display: flex; -------
+    flex-direction: column;
+}
+
+div.text-img {
+    display: flex; ---------
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0px;
+}
+
+img.img-small {
+    width: 28%;
+}
+
+/*rodape*/
+
+footer {
+    display: grid;
+    grid-template: 6vh 18vh / 1fr 1fr;
+
+    gap: 2vh;
+
+    width: 80%;
+    margin: 0px auto 16px auto;
+}
+
+h3, h4 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+a.link-rp {
+    font-weight: 300;
+    font-size: 14px;
+
+    color: var(--cor0);
+
+    margin-top: 1vh;
+}
+
+div.inicial-rp, div.pag-rp, div.app-rp {
+    background-color: var(--cor7);
+    border-radius: 15px; -------
+}
+
+div.pag-rp, div.app-rp {
+    display: flex; --------
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0% 8%;
+}
+
+div.column {
+    display: flex; --------
+    flex-direction: column;
+    text-align: center;
+
+    width: 45%;
+}
+
+div.inicial-rp {
+    grid-column: 1/2;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;-------------
+
+    font-size: 1.2em;
+}
+
+div.pag-rp {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+div.app-rp {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+picture {
+    display: flex; ---------
+    justify-content: flex-end;
+
+    width: 90%;
+}
+
+img.app-img-rp {
+    width: 90%;
+    margin-left: 5%;
+}
+
+/*outros*/
+
+span.division {
+    border-right: 1px solid var(--cor0);
+    height: 50%;
+
+    margin: 0px 4%;
+}
+
+/*reposividade*/
+
+@media (max-width: 1200px) {
+    section {
+        height: 450px;
+    }
+
+    section#principal {
+        height: 540px;
+    }
+
+    section#principal > div.msg-p > h1 {
+        font-size: 32px;
+    }
+
+    h2.title-2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 912px) {
+    nav.large {
+        display: none;
+    }
+
+    nav.small {
+        display: flex;
+    }
+
+    section {
+        height: 500px;
+    }
+
+    section#principal {
+        height: 620px;
+    }
+
+    section#principal > div.msg-p > h1 {
+        font-size: 32px;
+    }
+
+    h2.title-2 {
+        font-size: 24px;
+    }
+
+    footer {
+        grid-template: 40px 200px / 2fr 1fr;
+    }
+
+    div.app-rp {
+        flex-direction: column;
+
+        padding: 14% 14%;
+
+        text-align: center;
+    }
+
+    img.app-img-rp {
+        width: 95%;
+        margin: auto;
+    }
+
+    p {
+        font-size: 12px;
+    }
+} 
+
+@media (max-width: 795px) {
+    section {
+        height: 450px;
+    }
+
+    section#principal {
+        height: 580px;
+    }
+
+    section#principal > div.msg-p > h1 {
+        font-size: 28px;
+    }
+
+    h2.title-2 {
+        font-size: 22px;
+    }
+
+    img.app-img-rp {
+        width: 70%;
+        margin: auto;
+    }
+
+} 
+
+@media (max-width: 530px) {
+    section {
+        width: 90%;
+    }
+    p {
+        font-size: 12px;
+    }
+
+    h2.title-2 {
+        margin-top: 4%;
+    }
+
+    header {
+        padding: 16px 32px;
+    }
+
+    h1.logo {
+        font-size: 18px;
+    }
+
+    section#principal {
+        text-align: center;
+        justify-content: center;
+        height: 75vh;
+    }
+
+    img.img-p {
+        display: none;
+    }
+
+    div.conta {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin: 0%;
+    }
+
+    div.btn-p {
+        margin-top: 4%;
+    }
+
+    section#venda {
+        height: 70vh;
+    }
+
+    div.img-text {
+        flex-direction: column;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    div.info {
+        margin-top: 8%;
+        flex-direction: row;
+        width: 90%;
+    }
+
+    p.cub-venda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6%;
+        text-align: center;
+    }
+
+    section#ganhe {
+        height: 60vh;
+    }
+
+    div.text-img {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    img.img-small {
+        width: 80%;
+    }
+
+    footer {
+        grid-template: 40px 128px 156px / 1fr;
+
+        width: 90%;
+    }
+
+    div.inicial-rp {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    div.pag-rp {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    a.link-rp {
+        font-size: 10px;
+    }
+
+    img.app-img-rp {
+        width: 80%;
+    }
+    
+    div.app-rp {
+        grid-column: 1;
+        grid-row: 3;
+
+        padding: 10%;
+    }
+
+}

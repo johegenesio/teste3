@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('base.css');
+
+:root {
+    --cor0: #353535;
+    --cor1: #4C8647;
+    --cor2: #8A78E0;
+    --cor3: #2B7FFF;
+    --cor4: #FA4236;
+    --cor5: #F2901C;
+    --cor6: #fbfbfb;
+    --cor7: #f2eeeb;
+    --cores: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    border-radius: 8px 0px 0px 8px;
+}
+
+span.gradient {
+    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*fazer a estrela aparecer grandona*/
+
+.rotate-center {
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/**/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    color: var(--cor0);
+    font-family: var(--font);
+
+    overflow-x: hidden;
+}
+
+main {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container-img {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+
+    margin-top: 80px;
+}
+
+p {
+    margin-bottom: 48px;
+}
+
+div.container {
+    width: 280px;
+}
+
+div.btn-v {
+    background-color: var(--cor7);
+
+    padding: 16px 0px;
+
+    border-radius: 16px;
+}
+
+a {
+    padding: 16px 32px;
+
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+a:hover {
+    background: linear-gradient(90deg, #4C8647 25%, #8A78E0 40%, #2B7FFF 60%, #FA4236 80%, #F2901C 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (max-width: 750px) {
+    body {
+        padding: 48px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

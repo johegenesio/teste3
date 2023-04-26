@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/da6e63d36c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="home.css">
+    
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+
+    <title>re.star</title>
+</head>
+
+<body>
+    <header class="flexbetween radius">
+        <h1 class="logo"><span class="gradient">re.star</span></h1>
+        <nav class="large flexjustifyend" id="menu">
+            <a class="link-h" href="#">Quem somos</a>
+            <a class="link-h" href="#">Fale conosco</a>
+            <a class="link-h link-ec radius" href="sucess-e.html">Entre</a>
+            <a class="link-h link-ec radius" href="sucess-c.html">Cadastra-se</a>
+        </nav>
+        <nav class="small" onclick="clickMenu()">
+            <i class="fa-solid fa-bars" style="color: #232323;"></i>
+        </nav>
+    </header>
+    <main>
+        <section id="principal" class="flexbetween">
+            <div class="msg-p fade-in-bottom">
+                <h1 class="title-p">Seja <br><span class="gradient">bem-vindo</span> <br>ao seu brechó online</h1>
+                <div class="conta">
+                    <div class="btn-p radius"><a type="button" class="link-p radius" href="sucess-e.html">Entre</a></div>
+                    <div class="btn-p radius"><a type="button" class="link-p radius" href="sucess-c.html">Cadastra-se</a></div>
+                </div>
+            </div>
+                <img class="img-p flexjustifyend fade-in-bottom" src="midia/bv.png" alt="camiseta feita de grama, com estrelinhas no fundo">
+        </section>
+        <section id="venda" class="radius flexcolumn">
+            <h2 class="title-2">venda o que está <span class="gradient">restando</span></h2>
+            <div class="img-text">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="midia/Group 12.png" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="midia/Group 11.png" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="midia/Group 13.png" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="info flexcolumn">
+                    <p class="cub-venda radius">Sua venda contribui para um mundo mais verde e sustentável.</p>
+                    <p class="cub-venda radius">Reciclar é pensar no bem-estar do próximo e do seu.</p>
+                </div>
+            </div>
+        </section>
+        <section id="ganhe" class="flexcolumn">
+            <h2 class="title-2">e ganhe <span class="gradient">benefícios</span></h2>
+            <div class="text-img flexbetween">
+                <div class="info">
+                    <p>Vendendo suas coisas você ganha descontos em outros produtos, ajudando o mundo você ganha.</p>
+                </div>
+                <img class="img-small" src="midia/Group 20.png" alt="um celular com o aplicativo da restar, mostrano lucros de vendas.">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="inicial-rp radius fullcenter">
+            <h3>re.star - brechó online</h3>
+        </div>
+        <div class="pag-rp radius flexbetween">
+            <div class="column">
+                <h4>Páginas:</h4>
+                <a class="link-rp" href="fale-conosco/fale-c.html">Fale conosco</a>
+                <a class="link-rp" href="quem-somos/qm-somos.html">Quem somos</a>
+            </div>
+            <span class="division"></span>
+            <div class="column flexcolumn" style="width: 70%;">
+                <h4>Regulamento:</h4>
+                <a class="link-rp" href="#">Termos/Condições de uso</a>
+                <a class="link-rp" href="#">Privacidade</a>
+            </div>
+        </div>
+        <div class="app-rp radius flexbetween">
+            <h4>Para usufruir todo esse brilho, instale o app :)</h4>
+            <picture class="flexjustifyend">
+                <source class="app-img-rp" media="(max-width: 660px)" srcset="midia/image13.png" type="image/png">
+                <source class="app-img-rp" media="(max-width: 912px)" srcset="midia/Group.png" type="image/png">
+                <img class="app-img-rp" src="midia/Group 18.png" alt="Qr code do aplicativo">
+            </picture>
+        </div>
+    </footer>
+</body>
+<script>
+    function clickMenu() {
+        if (menu.style.display == "flex") {
+            menu.style.display = "none"
+        } else {
+            menu.style.display = "flex"
+            menu.style.animation ="scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+        }  
+    }
+</script>
+</html>
